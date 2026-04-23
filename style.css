@@ -12,6 +12,25 @@
 /* ============================================= */
 /* HERO - Responsable: Jesús                     */
 /* ============================================= */
+.hero { background: linear-gradient(135deg, #1a2744 0%, #1e3054 50%, #1a2744 100%); padding: 140px 0 60px; min-height: 520px; overflow: hidden; }
+.hero__container { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.hero__content { flex: 1; max-width: 480px; }
+.hero__title { font-size: 2.6rem; font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 16px; }
+.hero__description { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 28px; line-height: 1.7; }
+.hero__buttons { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+.hero__login { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+.hero__login-link { color: #f5a623; font-weight: 700; }
+.hero__login-link:hover { text-decoration: underline; }
+.hero__image { flex: 1; max-width: 480px; display: flex; justify-content: center; }
+.hero__image img { max-height: 360px; object-fit: contain; filter: drop-shadow(0 10px 40px rgba(0,0,0,0.3)); }
+
+/* Stats */
+.stats { background: #fff; border-top: 1px solid #e8ecf1; }
+.stats__container { display: flex; justify-content: center; align-items: center; gap: 60px; padding: 40px 20px; }
+.stats__item { text-align: center; }
+.stats__number { display: block; font-size: 1.8rem; font-weight: 800; color: #1a2744; }
+.stats__label { font-size: 0.9rem; color: #5a6a7e; }
+.stats__divider { width: 1px; height: 50px; background: #e0e5ec; }
 
 /* FIN HERO - Jesús */
 
