@@ -67,7 +67,15 @@
 /* ============================================= */
 /* CTA - Responsable: Jesús                      */
 /* ============================================= */
-
+.cta { padding: 80px 0; background: linear-gradient(135deg, #1a2744 0%, #243658 50%, #1e2f4d 100%); text-align: center; }
+.cta__container { max-width: 640px; }
+.cta__icon { width: 100px; height: 100px; border-radius: 20px; margin: 0 auto 24px; object-fit: cover; }
+.cta__title { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
+.cta__text { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; margin-bottom: 28px; }
+.cta__buttons { display: flex; justify-content: center; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
+.cta__login { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+.cta__login-link { color: #f5a623; font-weight: 700; }
+.cta__login-link:hover { text-decoration: underline; }
 /* FIN CTA - Jesús */
 
 /* ============================================= */
