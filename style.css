@@ -1,6 +1,39 @@
 /* ============================================= */
 /* ESTILOS BASE / GENERALES                      */
 /* ============================================= */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; color: #1a2744; line-height: 1.6; background: #fff; }
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+/* Badges */
+.badge { display: inline-block; padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 16px; }
+.badge--yellow { background: #f5a623; color: #fff; }
+.badge--light { background: #f0f4f8; color: #1a2744; border: 1px solid #d0d9e4; }
+.badge--green { background: #e6f9f0; color: #1a8a5c; border: 1px solid #b0e4cb; }
+.badge--yellow-outline { background: #fff8e6; color: #c48a15; border: 1px solid #f5d06b; }
+
+/* Section Titles */
+.section__title { font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 8px; color: #1a2744; }
+.section__subtitle { text-align: center; color: #5a6a7e; margin-bottom: 40px; font-size: 1rem; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease; border: none; }
+.btn__icon { font-size: 1.1rem; }
+.btn--white { background: #fff; color: #1a2744; }
+.btn--white:hover { background: #f0f4f8; transform: translateY(-2px); }
+.btn--outline-light { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.3); }
+.btn--outline-light:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+.btn--primary { background: #1a2744; color: #fff; }
+.btn--primary:hover { background: #253a5e; }
+.btn--yellow { background: #f5a623; color: #1a2744; }
+.btn--yellow:hover { background: #e09510; transform: translateY(-2px); }
+.btn--full { width: 100%; justify-content: center; }
+.btn--lg { padding: 16px 32px; font-size: 1.1rem; border-radius: 10px; }
+
 
 
 /* ============================================= */
