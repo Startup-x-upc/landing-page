@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChapaTuRuta - Conectamos pasajeros con motaxistas verificados en tu ciudad. Precio justo, conductor seguro, disponible ahora.">
+    <title>ChapaTuRuta | Tu mototaxi, cuando lo necesitas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- HEADER - Responsable: Dalila                  -->
+    <!-- ============================================= -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                Chapa<span class="header__logo--accent">Tu</span>Ruta
+            </a>
+            <button class="header__menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header__nav" id="mainNav">
+                <div class="header__nav-header">
+                    <a href="#" class="header__logo header__logo--mobile">
+                        Chapa<span class="header__logo--accent">Tu</span>Ruta
+                    </a>
+                    <button class="header__nav-close" id="menuClose" aria-label="Cerrar menú">✕</button>
+                </div>
+                <ul class="header__nav-list">
+                    <li><a href="#como-funciona" class="header__nav-link">¿Cómo funciona?</a></li>
+                    <li><a href="#tarifas" class="header__nav-link">Tarifas</a></li>
+                    <li><a href="#testimonios" class="header__nav-link">Testimonios</a></li>
+                    <li><a href="#equipo" class="header__nav-link">Equipo</a></li>
+                </ul>
+                <div class="header__nav-cta">
+                    <a href="#" class="btn btn--yellow">🛺 Quiero viajar</a>
+                    <a href="#" class="btn btn--outline-light">🚗 Quiero manejar</a>
+                </div>
+                <a href="#registrarse" class="header__btn-register">Registrarse</a>
+            </nav>
+        </div>
+    </header>
+    <!-- FIN HEADER - Dalila -->
+
+    <main>
+
+        <!-- ============================================= -->
+        <!-- HERO - Responsable: Jesús                     -->
+        <!-- ============================================= -->
+        <section class="hero" id="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="badge badge--yellow">Ciudades intermedias del Perú</span>
+                    <h1 class="hero__title">Tu mototaxi, cuando lo necesitas</h1>
+                    <p class="hero__description">
+                        Conectamos pasajeros con motaxistas verificados en tu ciudad. Precio justo, conductor seguro, disponible ahora.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#" class="btn btn--white">
+                            <span class="btn__icon">🛺</span>
+                            Quiero viajar
+                        </a>
+                        <a href="#" class="btn btn--outline-light">
+                            <span class="btn__icon">🚗</span>
+                            Quiero manejar
+                        </a>
+                    </div>
+                    <p class="hero__login">
+                        ¿Ya tienes cuenta? <a href="#" class="hero__login-link">Inicia sesión</a>
+                    </p>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/images/mototaxi-hero.png" alt="Mototaxi de ChapaTuRuta" loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTADÍSTICAS DEL HERO - Responsable: Jesús -->
+        <section class="stats" id="stats">
+            <div class="container stats__container">
+                <div class="stats__item">
+                    <span class="stats__number">500 +</span>
+                    <span class="stats__label">Conductores</span>
+                </div>
+                <div class="stats__divider"></div>
+                <div class="stats__item">
+                    <span class="stats__number">12 +</span>
+                    <span class="stats__label">Ciudades</span>
+                </div>
+                <div class="stats__divider"></div>
+                <div class="stats__item">
+                    <span class="stats__number">98 %</span>
+                    <span class="stats__label">Satisfacción</span>
+                </div>
+            </div>
+        </section>
+        <!-- FIN HERO - Jesús -->
+
+        <!-- ============================================= -->
+        <!-- CÓMO FUNCIONA - Responsable: Andy             -->
+        <!-- ============================================= -->
+        <section class="how-it-works" id="como-funciona">
+            <div class="container">
+                <span class="badge badge--light">Así de simple</span>
+                <h2 class="section__title">¿Cómo funciona?</h2>
+                <p class="section__subtitle">En menos de 2 minutos estás en tu destino</p>
+
+                <!-- Tabs pasajero / conductor -->
+                <div class="how-tabs">
+                    <button class="how-tabs__btn how-tabs__btn--active" data-tab="pasajero">Como pasajero</button>
+                    <button class="how-tabs__btn" data-tab="conductor">Como conductor</button>
+                </div>
+
+                <!-- Flujo pasajero -->
+                <div class="how-flow" id="tab-pasajero">
+                    <div class="how-flow__step">
+                        <div class="how-flow__icon">📍</div>
+                        <h3 class="how-flow__title">Solicita tu viaje</h3>
+                        <p class="how-flow__text">Indica origen y destino. El precio se calcula automáticamente.</p>
+                    </div>
+                    <div class="how-flow__arrow">➜</div>
+                    <div class="how-flow__step">
+                        <div class="how-flow__icon">🚕</div>
+                        <h3 class="how-flow__title">Tu conductor acepta</h3>
+                        <p class="how-flow__text">Un conductor verificado recibe tu solicitud y confirma el viaje.</p>
+                    </div>
+                    <div class="how-flow__arrow">➜</div>
+                    <div class="how-flow__step">
+                        <div class="how-flow__icon">✅</div>
+                        <h3 class="how-flow__title">Viaja seguro</h3>
+                        <p class="how-flow__text">Llega a tu destino con precio fijo. Califica tu experiencia.</p>
+                    </div>
+                </div>
+
+                <!-- Flujo conductor -->
+                <div class="how-flow how-flow--hidden" id="tab-conductor">
+                    <div class="how-driver-cards">
+                        <div class="how-driver-card">
+                            <div class="how-driver-card__icon">📋</div>
+                            <h3 class="how-driver-card__title">Regístrate</h3>
+                            <p class="how-driver-card__text">Crea tu cuenta y sube tus documentos.</p>
+                        </div>
+                        <div class="how-driver-card how-driver-card--highlight">
+                            <div class="how-driver-card__icon">🔴</div>
+                            <h3 class="how-driver-card__title">Actívate</h3>
+                            <p class="how-driver-card__text">Enciende tu disponibilidad y apareces en el mapa.</p>
+                        </div>
+                        <div class="how-driver-card">
+                            <div class="how-driver-card__icon">💰</div>
+                            <h3 class="how-driver-card__title">Recibe carreras</h3>
+                            <p class="how-driver-card__text">Acepta solicitudes cercanas y gana por cada viaje.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subtítulo conductor -->
+                <h3 class="how-section__subtitle">Flujo del conductor</h3>
+                <div class="how-driver-cards how-driver-cards--always">
+                    <div class="how-driver-card">
+                        <div class="how-driver-card__icon">📋</div>
+                        <h3 class="how-driver-card__title">Regístrate</h3>
+                        <p class="how-driver-card__text">Crea tu cuenta y sube tus documentos.</p>
+                    </div>
+                    <div class="how-driver-card how-driver-card--highlight">
+                        <div class="how-driver-card__icon">🔴</div>
+                        <h3 class="how-driver-card__title">Actívate</h3>
+                        <p class="how-driver-card__text">Enciende tu disponibilidad y apareces en el mapa.</p>
+                    </div>
+                    <div class="how-driver-card">
+                        <div class="how-driver-card__icon">💰</div>
+                        <h3 class="how-driver-card__title">Recibe carreras</h3>
+                        <p class="how-driver-card__text">Acepta solicitudes cercanas y gana por cada viaje.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN CÓMO FUNCIONA - Andy -->
+
+        <!-- ============================================= -->
+        <!-- BENEFICIOS - Responsable: Sebastian           -->
+        <!-- ============================================= -->
+        <section class="benefits" id="beneficios">
+            <div class="container">
+                <span class="badge badge--light">Para todos</span>
+                <h2 class="section__title">Beneficios por perfil</h2>
+
+                <div class="benefits__grid">
+                    <!-- Card Pasajeros -->
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon-wrapper">
+                            <span class="benefit-card__icon">👤</span>
+                        </div>
+                        <h3 class="benefit-card__title">Para pasajeros</h3>
+                        <ul class="benefit-card__list">
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check">✔️</span>
+                                Conductores verificados con brevete y SOAT
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check">✔️</span>
+                                Precio estimado antes de viajar
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check">✔️</span>
+                                Calificaciones y reseñas reales
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check">✔️</span>
+                                Disponibilidad constante 24/7
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn--primary btn--full">Quiero viajar</a>
+                    </div>
+
+                    <!-- Card Conductores -->
+                    <div class="benefit-card benefit-card--dark">
+                        <div class="benefit-card__icon-wrapper benefit-card__icon-wrapper--dark">
+                            <span class="benefit-card__icon">🛠️</span>
+                        </div>
+                        <h3 class="benefit-card__title">Para conductores</h3>
+                        <ul class="benefit-card__list">
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check benefit-card__check--dark">✔️</span>
+                                Conductores verificados con brevete y SOAT
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check benefit-card__check--dark">✔️</span>
+                                Precio estimado antes de viajar
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check benefit-card__check--dark">✔️</span>
+                                Calificaciones y reseñas reales
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check benefit-card__check--dark">✔️</span>
+                                Disponibilidad constante 24/7
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn--yellow btn--full">Quiero manejar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN BENEFICIOS - Sebastian -->
+
+        <!-- ============================================= -->
+        <!-- TARIFAS - Responsable: Eduardo                -->
+        <!-- ============================================= -->
+        <section class="pricing" id="tarifas">
+            <div class="container">
+                <span class="badge badge--green">Precios claros</span>
+                <h2 class="section__title">¿Cuánto cuesta el viaje?</h2>
+                <p class="section__subtitle">El precio se calcula automáticamente según la distancia.<br>Sin sorpresas.</p>
+
+                <!-- Fórmula -->
+                <div class="pricing__formula">
+                    <p class="pricing__formula-label">Fórmula de cálculo</p>
+                    <p class="pricing__formula-expression">Tarifa base + (S/km x distancia)</p>
+                    <div class="pricing__formula-values">
+                        <div class="pricing__formula-item">
+                            <span class="pricing__formula-amount">S/ 2.00</span>
+                            <span class="pricing__formula-desc">Tarifa base</span>
+                        </div>
+                        <div class="pricing__formula-item">
+                            <span class="pricing__formula-amount">S/ 1.50</span>
+                            <span class="pricing__formula-desc">Precio por km</span>
+                        </div>
+                        <div class="pricing__formula-item">
+                            <span class="pricing__formula-amount">S/ 4.00</span>
+                            <span class="pricing__formula-desc">Mínimo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejemplos de rutas -->
+                <div class="pricing__routes">
+                    <div class="pricing__route-card">
+                        <h4 class="pricing__route-name">Jr. Castilla → Mercado</h4>
+                        <p class="pricing__route-distance">1.2 km</p>
+                        <div class="pricing__route-bottom">
+                            <span class="pricing__route-price">S/ 4.00</span>
+                            <span class="pricing__route-tag pricing__route-tag--min">Precio mínimo aplicado</span>
+                        </div>
+                    </div>
+                    <div class="pricing__route-card">
+                        <h4 class="pricing__route-name">Terminal → Plaza de Armas</h4>
+                        <p class="pricing__route-distance">3.5 km</p>
+                        <div class="pricing__route-bottom">
+                            <span class="pricing__route-price">S/ 7.25</span>
+                            <span class="pricing__route-tag pricing__route-tag--calc">Precio calculado</span>
+                        </div>
+                    </div>
+                    <div class="pricing__route-card">
+                        <h4 class="pricing__route-name">Colegio → Hospital</h4>
+                        <p class="pricing__route-distance">5.0 km</p>
+                        <div class="pricing__route-bottom">
+                            <span class="pricing__route-price">S/ 9.50</span>
+                            <span class="pricing__route-tag pricing__route-tag--calc">Precio calculado</span>
+                        </div>
+                    </div>
+                    <div class="pricing__route-card">
+                        <h4 class="pricing__route-name">Av. Grau → Jr. Unión</h4>
+                        <p class="pricing__route-distance">0.8 km</p>
+                        <div class="pricing__route-bottom">
+                            <span class="pricing__route-price">S/ 4.00</span>
+                            <span class="pricing__route-tag pricing__route-tag--min">Precio mínimo aplicado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn--yellow btn--full btn--lg">Empieza ahora, es gratis</a>
+            </div>
+        </section>
+        <!-- FIN TARIFAS - Eduardo -->
+
+        <!-- ============================================= -->
+        <!-- TESTIMONIOS - Responsable: Dalila             -->
+        <!-- ============================================= -->
+        <section class="testimonials" id="testimonios">
+            <div class="container">
+                <span class="badge badge--yellow-outline">Comunidad real</span>
+                <h2 class="section__title">Lo que dicen nuestros usuarios</h2>
+
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__text">
+                            "Antes perdía 20 min esperando en la calle. Ahora en 2 minutos tengo mi moto. ¡Impresionante!"
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">MG</div>
+                            <div class="testimonial-card__info">
+                                <strong class="testimonial-card__name">Martín G.</strong>
+                                <span class="testimonial-card__location">Talara, Piura</span>
+                                <span class="testimonial-card__role">Pasajero</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__text">
+                            "Mis ganancias subieron 30%. Sé dónde hay demanda y no pierdo tiempo dando vueltas en vacío."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">CR</div>
+                            <div class="testimonial-card__info">
+                                <strong class="testimonial-card__name">Carlos R.</strong>
+                                <span class="testimonial-card__location">Huarmey, Ancash</span>
+                                <span class="testimonial-card__role">Conductor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__text">
+                            "Me da mucha seguridad saber el nombre y calificación del conductor antes de subir."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">RM</div>
+                            <div class="testimonial-card__info">
+                                <strong class="testimonial-card__name">Raúl M.</strong>
+                                <span class="testimonial-card__location">Casma, Ancash</span>
+                                <span class="testimonial-card__role">Pasajero</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN TESTIMONIOS - Dalila -->
+
+        <!-- ============================================= -->
+        <!-- EQUIPO - Responsable: Andy                    -->
+        <!-- ============================================= -->
+        <section class="team" id="equipo">
+            <div class="container">
+                <span class="badge badge--light">El equipo</span>
+                <h2 class="section__title">Conoce a CTR Technologies</h2>
+                <p class="section__subtitle">El equipo detrás de ChapaTuRuta</p>
+
+                <div class="team__list">
+                    <div class="team-card">
+                        <div class="team-card__left">
+                            <img src="assets/images/team-andy.png" alt="Andy Saúl Pillaca Gonzales" class="team-card__photo">
+                            <h3 class="team-card__name">Andy Saúl Pillaca Gonzales</h3>
+                            <p class="team-card__role">Estudiante de ingeniería de software</p>
+                            <div class="team-card__social">
+                                <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+                                <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+                                <a href="#" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg></a>
+                            </div>
+                        </div>
+                        <div class="team-card__right">
+                            <p class="team-card__bio">Soy estudiante de la carrera de Ingeniería de Software, con gran interés en el desarrollo de soluciones tecnológicas innovadoras que contribuyan a resolver problemas reales. Me encuentro en constante proceso de aprendizaje y fortalecimiento de mis conocimientos en el área de programación y desarrollo de software. Poseo sólidos conocimientos en lenguajes de programación como C++ y Python, además de experiencia en el manejo de SQL, Excel, Power BI y mecanografía. Me interesa especialmente seguir ampliando mis habilidades en el desarrollo de software, bases de datos y análisis de información. Considero importante la creación de soluciones funcionales que aporten valor y mejoren la experiencia de los usuarios.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card__left">
+                            <img src="assets/images/team-dalila.png" alt="Dalila Victoria Torres Sanchez" class="team-card__photo">
+                            <h3 class="team-card__name">Dalila Victoria Torres Sanchez</h3>
+                            <p class="team-card__role">Estudiante de ingeniería de software</p>
+                            <div class="team-card__social">
+                                <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+                                <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+                                <a href="#" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg></a>
+                            </div>
+                        </div>
+                        <div class="team-card__right">
+                            <p class="team-card__bio">Soy estudiante de Ingeniería de Software, he programado en C#, C++, PHP, Java y Python, además manejo de bases de datos relacionales. También he trabajado con Git y metodologías ágiles como Scrum, lo cual me ha ayudado a organizarme mejor y a trabajar en equipo con más fluidez. Me interesa mucho el desarrollo backend, porque me gusta entender la lógica detrás de las cosas, cómo se procesan los datos y cómo se asegura que todo funcione correctamente. También me gusta colaborar en el frontend, porque entiendo que un buen producto requiere que ambas partes trabajen en armonía.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card__left">
+                            <img src="assets/images/team-jesus.jpg" alt="Jesús Iván Castillo Vidal" class="team-card__photo">
+                            <h3 class="team-card__name">Jesús Iván Castillo Vidal</h3>
+                            <p class="team-card__role">Estudiante de ingeniería de software</p>
+                            <div class="team-card__social">
+                                <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+                                <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+                                <a href="#" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg></a>
+                            </div>
+                        </div>
+                        <div class="team-card__right">
+                            <p class="team-card__bio">Soy estudiante de Ingeniería de Software y desarrollador full-stack orientado al emprendimiento. Tengo experiencia práctica liderando la creación de plataformas SaaS y sistemas de gestión enfocados en la transformación digital de negocios locales. Me especializo en llevar proyectos desde la arquitectura y el prototipado hasta el lanzamiento, utilizando tecnologías como Next.js, FastAPI y Tailwind CSS, etc. Siempre buscando crear soluciones tecnológicas escalables y centradas en el usuario.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card__left">
+                            <img src="assets/images/team-eduardo.jpeg" alt="Eduardo Manuel Aguirre Ramos" class="team-card__photo">
+                            <h3 class="team-card__name">Eduardo Manuel Aguirre Ramos</h3>
+                            <p class="team-card__role">Estudiante de ingeniería de software</p>
+                            <div class="team-card__social">
+                                <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+                                <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+                                <a href="#" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg></a>
+                            </div>
+                        </div>
+                        <div class="team-card__right">
+                            <p class="team-card__bio">Soy estudiante de la carrera de ingeniería de software de 5to ciclo en la Universidad Peruana de Ciencias Aplicadas, tengo conocimientos en como C++, Python, CSS, JavaScript. Manejo he implemento directamente con Git y utilizo metodologías Ágiles como Scrum. En si me interesa mucho trabajar en equipo en diferentes proyectos debido a las diferentes experiencias que trae ello tanto así como el resolver problemas conjuntos y diseñar soluciones innovadoras.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card__left">
+                            <img src="assets/images/team-sebastian.png" alt="Sebastian Andres Aiquipa Poma" class="team-card__photo">
+                            <h3 class="team-card__name">Sebastian Andres Aiquipa Poma</h3>
+                            <p class="team-card__role">Estudiante de ingeniería de software</p>
+                            <div class="team-card__social">
+                                <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+                                <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+                                <a href="#" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="#1a2744"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg></a>
+                            </div>
+                        </div>
+                        <div class="team-card__right">
+                            <p class="team-card__bio">Soy estudiante de Ingeniería de Software y desarrollador full-stack. Tengo experiencia construyendo plataformas web completas — desde la arquitectura hasta el despliegue — utilizando tecnologías como React, Node.js, Express y PostgreSQL. Me apasiona entender el código en profundidad, no solo hacerlo funcionar, y busco siempre crear soluciones escalables que resuelvan problemas reales de negocio. He programado en C#, C++, PHP, Java y Python, además manejo de bases de datos relacionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN EQUIPO - Andy -->
+
+        <!-- ============================================= -->
+        <!-- CTA - Responsable: Jesús                      -->
+        <!-- ============================================= -->
+        <section class="cta" id="registrarse">
+            <div class="container cta__container">
+                <img src="assets/images/cta-icon.png" alt="ChapaTuRuta App" class="cta__icon">
+                <h2 class="cta__title">¿Listo para empezar?</h2>
+                <p class="cta__text">Únete a los pasajeros y conductores que ya están usando ChapaTuRuta en su ciudad. Registro gratuito, sin compromisos.</p>
+                <div class="cta__buttons">
+                    <a href="#" class="btn btn--white">🛺 Quiero viajar</a>
+                    <a href="#" class="btn btn--outline-light">🚗 Quiero manejar</a>
+                </div>
+                <p class="cta__login">¿Ya tienes cuenta? <a href="#" class="cta__login-link">Inicia sesión</a></p>
+            </div>
+        </section>
+        <!-- FIN CTA - Jesús -->
+
+    </main>
+
+    <!-- ============================================= -->
+    <!-- FOOTER - Responsable: Eduardo                 -->
+    <!-- ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container footer__container">
+            <a href="#" class="footer__logo">Chapa<span class="footer__logo--accent">Tu</span>Ruta</a>
+            <p class="footer__copy">© 2026 CTR Technologies</p>
+            <nav class="footer__nav">
+                <a href="#" class="footer__link">Términos</a>
+                <a href="#" class="footer__link">Privacidad</a>
+                <a href="#" class="footer__link">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+    <!-- FIN FOOTER - Eduardo -->
+
+    <script>
+        // Toggle menú móvil
+        const menuToggle = document.getElementById('menuToggle');
+        const menuClose = document.getElementById('menuClose');
+        const mainNav = document.getElementById('mainNav');
+
+        function openMenu() {
+            mainNav.classList.add('header__nav--open');
+            menuToggle.classList.add('header__menu-toggle--active');
+        }
+        function closeMenu() {
+            mainNav.classList.remove('header__nav--open');
+            menuToggle.classList.remove('header__menu-toggle--active');
+        }
+
+        menuToggle.addEventListener('click', openMenu);
+        menuClose.addEventListener('click', closeMenu);
+
+        // Tabs "Cómo funciona"
+        const tabBtns = document.querySelectorAll('.how-tabs__btn');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('how-tabs__btn--active'));
+                btn.classList.add('how-tabs__btn--active');
+                const tab = btn.dataset.tab;
+                document.getElementById('tab-pasajero').classList.toggle('how-flow--hidden', tab !== 'pasajero');
+                document.getElementById('tab-conductor').classList.toggle('how-flow--hidden', tab !== 'conductor');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Cerrar menú móvil si está abierto
+                    closeMenu();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
