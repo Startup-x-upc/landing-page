@@ -1,26 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="ChapaTuRuta - Conectamos pasajeros con motaxistas verificados en tu ciudad. Precio justo, conductor seguro, disponible ahora."
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChapaTuRuta - Conectamos pasajeros con motaxistas verificados en tu ciudad. Precio justo, conductor seguro, disponible ahora.">
     <title>ChapaTuRuta | Tu mototaxi, cuando lo necesitas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
     <!-- ============================================= -->
     <!-- HEADER - Responsable: Dalila                  -->
     <!-- ============================================= -->
-
     <header class="header" id="header">
         <div class="container header__container">
             <a href="#" class="header__logo">
@@ -52,239 +46,283 @@
             </nav>
         </div>
     </header>
-
     <!-- FIN HEADER - Dalila -->
 
     <main>
-      <!-- ============================================= -->
-      <!-- HERO - Responsable: Jesús                     -->
-      <!-- ============================================= -->
-      <section class="hero" id="hero">
-        <div class="container hero__container">
-          <div class="hero__content">
-            <span class="badge badge--yellow"
-              >Ciudades intermedias del Perú</span
-            >
-            <h1 class="hero__title">Tu mototaxi, cuando lo necesitas</h1>
-            <p class="hero__description">
-              Conectamos pasajeros con motaxistas verificados en tu ciudad.
-              Precio justo, conductor seguro, disponible ahora.
-            </p>
-            <div class="hero__buttons">
-              <a href="#" class="btn btn--white">
-                <span class="btn__icon">🛺</span>
-                Quiero viajar
-              </a>
-              <a href="#" class="btn btn--outline-light">
-                <span class="btn__icon">🚗</span>
-                Quiero manejar
-              </a>
+
+        <!-- ============================================= -->
+        <!-- HERO - Responsable: Jesús                     -->
+        <!-- ============================================= -->
+        <section class="hero" id="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="badge badge--yellow">Ciudades intermedias del Perú</span>
+                    <h1 class="hero__title">Tu mototaxi, cuando lo necesitas</h1>
+                    <p class="hero__description">
+                        Conectamos pasajeros con motaxistas verificados en tu ciudad. Precio justo, conductor seguro, disponible ahora.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#" class="btn btn--white">
+                            <span class="btn__icon">🛺</span>
+                            Quiero viajar
+                        </a>
+                        <a href="#" class="btn btn--outline-light">
+                            <span class="btn__icon">🚗</span>
+                            Quiero manejar
+                        </a>
+                    </div>
+                    <p class="hero__login">
+                        ¿Ya tienes cuenta? <a href="#" class="hero__login-link">Inicia sesión</a>
+                    </p>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/images/mototaxi-hero.png" alt="Mototaxi de ChapaTuRuta" loading="eager">
+                </div>
             </div>
-            <p class="hero__login">
-              ¿Ya tienes cuenta?
-              <a href="#" class="hero__login-link">Inicia sesión</a>
-            </p>
-          </div>
-          <div class="hero__image">
-            <img
-              src="assets/images/mototaxi-hero.png"
-              alt="Mototaxi de ChapaTuRuta"
-              loading="eager"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- ESTADÍSTICAS DEL HERO - Responsable: Jesús -->
-      <section class="stats" id="stats">
-        <div class="container stats__container">
-          <div class="stats__item">
-            <span class="stats__number">500 +</span>
-            <span class="stats__label">Conductores</span>
-          </div>
-          <div class="stats__divider"></div>
-          <div class="stats__item">
-            <span class="stats__number">12 +</span>
-            <span class="stats__label">Ciudades</span>
-          </div>
-          <div class="stats__divider"></div>
-          <div class="stats__item">
-            <span class="stats__number">98 %</span>
-            <span class="stats__label">Satisfacción</span>
-          </div>
-        </div>
-      </section>
-      <!-- FIN HERO - Jesús -->
-
-      <!-- ============================================= -->
-      <!-- CÓMO FUNCIONA - Responsable: Andy             -->
-      <!-- ============================================= -->
-
-      <!-- FIN CÓMO FUNCIONA - Andy -->
-      <section class="how-it-works" id="como-funciona">
-          <div class="container">
-              <span class="badge badge--light">Así de simple</span>
-              <h2 class="section__title">¿Cómo funciona?</h2>
-              <p class="section__subtitle">En menos de 2 minutos estás en tu destino</p>
-
-              <!-- Tabs pasajero / conductor -->
-              <div class="how-tabs">
-                  <button class="how-tabs__btn how-tabs__btn--active" data-tab="pasajero">Como pasajero</button>
-                  <button class="how-tabs__btn" data-tab="conductor">Como conductor</button>
-              </div>
-
-              <!-- Flujo pasajero -->
-              <div class="how-flow" id="tab-pasajero">
-                  <div class="how-flow__step">
-                      <div class="how-flow__icon">📍</div>
-                      <h3 class="how-flow__title">Solicita tu viaje</h3>
-                      <p class="how-flow__text">Indica origen y destino. El precio se calcula automáticamente.</p>
-                  </div>
-                  <div class="how-flow__arrow">➜</div>
-                  <div class="how-flow__step">
-                      <div class="how-flow__icon">🚕</div>
-                      <h3 class="how-flow__title">Tu conductor acepta</h3>
-                      <p class="how-flow__text">Un conductor verificado recibe tu solicitud y confirma el viaje.</p>
-                  </div>
-                  <div class="how-flow__arrow">➜</div>
-                  <div class="how-flow__step">
-                      <div class="how-flow__icon">✅</div>
-                      <h3 class="how-flow__title">Viaja seguro</h3>
-                      <p class="how-flow__text">Llega a tu destino con precio fijo. Califica tu experiencia.</p>
-                  </div>
-              </div>
-
-              <!-- Flujo conductor -->
-              <div class="how-flow how-flow--hidden" id="tab-conductor">
-                  <div class="how-driver-cards">
-                      <div class="how-driver-card">
-                          <div class="how-driver-card__icon">📋</div>
-                          <h3 class="how-driver-card__title">Regístrate</h3>
-                          <p class="how-driver-card__text">Crea tu cuenta y sube tus documentos.</p>
-                      </div>
-                      <div class="how-driver-card how-driver-card--highlight">
-                          <div class="how-driver-card__icon">🔴</div>
-                          <h3 class="how-driver-card__title">Actívate</h3>
-                          <p class="how-driver-card__text">Enciende tu disponibilidad y apareces en el mapa.</p>
-                      </div>
-                      <div class="how-driver-card">
-                          <div class="how-driver-card__icon">💰</div>
-                          <h3 class="how-driver-card__title">Recibe carreras</h3>
-                          <p class="how-driver-card__text">Acepta solicitudes cercanas y gana por cada viaje.</p>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Subtítulo conductor -->
-              <h3 class="how-section__subtitle">Flujo del conductor</h3>
-              <div class="how-driver-cards how-driver-cards--always">
-                  <div class="how-driver-card">
-                      <div class="how-driver-card__icon">📋</div>
-                      <h3 class="how-driver-card__title">Regístrate</h3>
-                      <p class="how-driver-card__text">Crea tu cuenta y sube tus documentos.</p>
-                  </div>
-                  <div class="how-driver-card how-driver-card--highlight">
-                      <div class="how-driver-card__icon">🔴</div>
-                      <h3 class="how-driver-card__title">Actívate</h3>
-                      <p class="how-driver-card__text">Enciende tu disponibilidad y apareces en el mapa.</p>
-                  </div>
-                  <div class="how-driver-card">
-                      <div class="how-driver-card__icon">💰</div>
-                      <h3 class="how-driver-card__title">Recibe carreras</h3>
-                      <p class="how-driver-card__text">Acepta solicitudes cercanas y gana por cada viaje.</p>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-
-      <!-- ============================================= -->
-      <!-- BENEFICIOS - Responsable: Sebastian           -->
-      <!-- ============================================= -->
-      <section class="benefits" id="beneficios">
-        <div class="container">
-          <span class="badge badge--light">Para todos</span>
-          <h2 class="section__title">Beneficios por perfil</h2>
-
-          <div class="benefits__grid">
-            <!-- Card Pasajeros -->
-            <div class="benefit-card">
-              <div class="benefit-card__icon-wrapper">
-                <span class="benefit-card__icon">👤</span>
-              </div>
-              <h3 class="benefit-card__title">Para pasajeros</h3>
-              <ul class="benefit-card__list">
-                <li class="benefit-card__item">
-                  <span class="benefit-card__check">✔️</span>
-                  Conductores verificados con brevete y SOAT
-                </li>
-                <li class="benefit-card__item">
-                  <span class="benefit-card__check">✔️</span>
-                  Precio estimado antes de viajar
-                </li>
-                <li class="benefit-card__item">
-                  <span class="benefit-card__check">✔️</span>
-                  Calificaciones y reseñas reales
-                </li>
-                <li class="benefit-card__item">
-                  <span class="benefit-card__check">✔️</span>
-                  Disponibilidad constante 24/7
-                </li>
-              </ul>
-              <a href="#" class="btn btn--primary btn--full">Quiero viajar</a>
+        <!-- ESTADÍSTICAS DEL HERO - Responsable: Jesús -->
+        <section class="stats" id="stats">
+            <div class="container stats__container">
+                <div class="stats__item">
+                    <span class="stats__number">500 +</span>
+                    <span class="stats__label">Conductores</span>
+                </div>
+                <div class="stats__divider"></div>
+                <div class="stats__item">
+                    <span class="stats__number">12 +</span>
+                    <span class="stats__label">Ciudades</span>
+                </div>
+                <div class="stats__divider"></div>
+                <div class="stats__item">
+                    <span class="stats__number">98 %</span>
+                    <span class="stats__label">Satisfacción</span>
+                </div>
             </div>
+        </section>
+        <!-- FIN HERO - Jesús -->
 
-            <!-- Card Conductores -->
-            <div class="benefit-card benefit-card--dark">
-              <div
-                class="benefit-card__icon-wrapper benefit-card__icon-wrapper--dark"
-              >
-                <span class="benefit-card__icon">🛠️</span>
-              </div>
-              <h3 class="benefit-card__title">Para conductores</h3>
-              <ul class="benefit-card__list">
-                <li class="benefit-card__item">
-                  <span class="benefit-card__check benefit-card__check--dark"
-                    >✔️</span
-                  >
-                  Conductores verificados con brevete y SOAT
-                </li>
-                <li class="benefit-card__item">
-                  <span class="benefit-card__check benefit-card__check--dark"
-                    >✔️</span
-                  >
-                  Precio estimado antes de viajar
-                </li>
-                <li class="benefit-card__item">
-                  <span class="benefit-card__check benefit-card__check--dark"
-                    >✔️</span
-                  >
-                  Calificaciones y reseñas reales
-                </li>
-                <li class="benefit-card__item">
-                  <span class="benefit-card__check benefit-card__check--dark"
-                    >✔️</span
-                  >
-                  Disponibilidad constante 24/7
-                </li>
-              </ul>
-              <a href="#" class="btn btn--yellow btn--full">Quiero manejar</a>
+        <!-- ============================================= -->
+        <!-- CÓMO FUNCIONA - Responsable: Andy             -->
+        <!-- ============================================= -->
+        <section class="how-it-works" id="como-funciona">
+            <div class="container">
+                <span class="badge badge--light">Así de simple</span>
+                <h2 class="section__title">¿Cómo funciona?</h2>
+                <p class="section__subtitle">En menos de 2 minutos estás en tu destino</p>
+
+                <!-- Tabs pasajero / conductor -->
+                <div class="how-tabs">
+                    <button class="how-tabs__btn how-tabs__btn--active" data-tab="pasajero">Como pasajero</button>
+                    <button class="how-tabs__btn" data-tab="conductor">Como conductor</button>
+                </div>
+
+                <!-- Flujo pasajero -->
+                <div class="how-flow" id="tab-pasajero">
+                    <div class="how-flow__step">
+                        <div class="how-flow__icon">📍</div>
+                        <h3 class="how-flow__title">Solicita tu viaje</h3>
+                        <p class="how-flow__text">Indica origen y destino. El precio se calcula automáticamente.</p>
+                    </div>
+                    <div class="how-flow__arrow">➜</div>
+                    <div class="how-flow__step">
+                        <div class="how-flow__icon">🚕</div>
+                        <h3 class="how-flow__title">Tu conductor acepta</h3>
+                        <p class="how-flow__text">Un conductor verificado recibe tu solicitud y confirma el viaje.</p>
+                    </div>
+                    <div class="how-flow__arrow">➜</div>
+                    <div class="how-flow__step">
+                        <div class="how-flow__icon">✅</div>
+                        <h3 class="how-flow__title">Viaja seguro</h3>
+                        <p class="how-flow__text">Llega a tu destino con precio fijo. Califica tu experiencia.</p>
+                    </div>
+                </div>
+
+                <!-- Flujo conductor -->
+                <div class="how-flow how-flow--hidden" id="tab-conductor">
+                    <div class="how-driver-cards">
+                        <div class="how-driver-card">
+                            <div class="how-driver-card__icon">📋</div>
+                            <h3 class="how-driver-card__title">Regístrate</h3>
+                            <p class="how-driver-card__text">Crea tu cuenta y sube tus documentos.</p>
+                        </div>
+                        <div class="how-driver-card how-driver-card--highlight">
+                            <div class="how-driver-card__icon">🔴</div>
+                            <h3 class="how-driver-card__title">Actívate</h3>
+                            <p class="how-driver-card__text">Enciende tu disponibilidad y apareces en el mapa.</p>
+                        </div>
+                        <div class="how-driver-card">
+                            <div class="how-driver-card__icon">💰</div>
+                            <h3 class="how-driver-card__title">Recibe carreras</h3>
+                            <p class="how-driver-card__text">Acepta solicitudes cercanas y gana por cada viaje.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subtítulo conductor -->
+                <h3 class="how-section__subtitle">Flujo del conductor</h3>
+                <div class="how-driver-cards how-driver-cards--always">
+                    <div class="how-driver-card">
+                        <div class="how-driver-card__icon">📋</div>
+                        <h3 class="how-driver-card__title">Regístrate</h3>
+                        <p class="how-driver-card__text">Crea tu cuenta y sube tus documentos.</p>
+                    </div>
+                    <div class="how-driver-card how-driver-card--highlight">
+                        <div class="how-driver-card__icon">🔴</div>
+                        <h3 class="how-driver-card__title">Actívate</h3>
+                        <p class="how-driver-card__text">Enciende tu disponibilidad y apareces en el mapa.</p>
+                    </div>
+                    <div class="how-driver-card">
+                        <div class="how-driver-card__icon">💰</div>
+                        <h3 class="how-driver-card__title">Recibe carreras</h3>
+                        <p class="how-driver-card__text">Acepta solicitudes cercanas y gana por cada viaje.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- FIN BENEFICIOS - Sebastian -->
+        </section>
+        <!-- FIN CÓMO FUNCIONA - Andy -->
 
-      <!-- ============================================= -->
-      <!-- TARIFAS - Responsable: Eduardo                -->
-      <!-- ============================================= -->
+        <!-- ============================================= -->
+        <!-- BENEFICIOS - Responsable: Sebastian           -->
+        <!-- ============================================= -->
+        <section class="benefits" id="beneficios">
+            <div class="container">
+                <span class="badge badge--light">Para todos</span>
+                <h2 class="section__title">Beneficios por perfil</h2>
 
-      <!-- FIN TARIFAS - Eduardo -->
+                <div class="benefits__grid">
+                    <!-- Card Pasajeros -->
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon-wrapper">
+                            <span class="benefit-card__icon">👤</span>
+                        </div>
+                        <h3 class="benefit-card__title">Para pasajeros</h3>
+                        <ul class="benefit-card__list">
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check">✔️</span>
+                                Conductores verificados con brevete y SOAT
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check">✔️</span>
+                                Precio estimado antes de viajar
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check">✔️</span>
+                                Calificaciones y reseñas reales
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check">✔️</span>
+                                Disponibilidad constante 24/7
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn--primary btn--full">Quiero viajar</a>
+                    </div>
 
-      <!-- ============================================= -->
-      <!-- TESTIMONIOS - Responsable: Dalila             -->
-      <!-- ============================================= -->
-       <section class="testimonials" id="testimonios">
+                    <!-- Card Conductores -->
+                    <div class="benefit-card benefit-card--dark">
+                        <div class="benefit-card__icon-wrapper benefit-card__icon-wrapper--dark">
+                            <span class="benefit-card__icon">🛠️</span>
+                        </div>
+                        <h3 class="benefit-card__title">Para conductores</h3>
+                        <ul class="benefit-card__list">
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check benefit-card__check--dark">✔️</span>
+                                Conductores verificados con brevete y SOAT
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check benefit-card__check--dark">✔️</span>
+                                Precio estimado antes de viajar
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check benefit-card__check--dark">✔️</span>
+                                Calificaciones y reseñas reales
+                            </li>
+                            <li class="benefit-card__item">
+                                <span class="benefit-card__check benefit-card__check--dark">✔️</span>
+                                Disponibilidad constante 24/7
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn--yellow btn--full">Quiero manejar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN BENEFICIOS - Sebastian -->
+
+        <!-- ============================================= -->
+        <!-- TARIFAS - Responsable: Eduardo                -->
+        <!-- ============================================= -->
+        <section class="pricing" id="tarifas">
+            <div class="container">
+                <span class="badge badge--green">Precios claros</span>
+                <h2 class="section__title">¿Cuánto cuesta el viaje?</h2>
+                <p class="section__subtitle">El precio se calcula automáticamente según la distancia.<br>Sin sorpresas.</p>
+
+                <!-- Fórmula -->
+                <div class="pricing__formula">
+                    <p class="pricing__formula-label">Fórmula de cálculo</p>
+                    <p class="pricing__formula-expression">Tarifa base + (S/km x distancia)</p>
+                    <div class="pricing__formula-values">
+                        <div class="pricing__formula-item">
+                            <span class="pricing__formula-amount">S/ 2.00</span>
+                            <span class="pricing__formula-desc">Tarifa base</span>
+                        </div>
+                        <div class="pricing__formula-item">
+                            <span class="pricing__formula-amount">S/ 1.50</span>
+                            <span class="pricing__formula-desc">Precio por km</span>
+                        </div>
+                        <div class="pricing__formula-item">
+                            <span class="pricing__formula-amount">S/ 4.00</span>
+                            <span class="pricing__formula-desc">Mínimo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ejemplos de rutas -->
+                <div class="pricing__routes">
+                    <div class="pricing__route-card">
+                        <h4 class="pricing__route-name">Jr. Castilla → Mercado</h4>
+                        <p class="pricing__route-distance">1.2 km</p>
+                        <div class="pricing__route-bottom">
+                            <span class="pricing__route-price">S/ 4.00</span>
+                            <span class="pricing__route-tag pricing__route-tag--min">Precio mínimo aplicado</span>
+                        </div>
+                    </div>
+                    <div class="pricing__route-card">
+                        <h4 class="pricing__route-name">Terminal → Plaza de Armas</h4>
+                        <p class="pricing__route-distance">3.5 km</p>
+                        <div class="pricing__route-bottom">
+                            <span class="pricing__route-price">S/ 7.25</span>
+                            <span class="pricing__route-tag pricing__route-tag--calc">Precio calculado</span>
+                        </div>
+                    </div>
+                    <div class="pricing__route-card">
+                        <h4 class="pricing__route-name">Colegio → Hospital</h4>
+                        <p class="pricing__route-distance">5.0 km</p>
+                        <div class="pricing__route-bottom">
+                            <span class="pricing__route-price">S/ 9.50</span>
+                            <span class="pricing__route-tag pricing__route-tag--calc">Precio calculado</span>
+                        </div>
+                    </div>
+                    <div class="pricing__route-card">
+                        <h4 class="pricing__route-name">Av. Grau → Jr. Unión</h4>
+                        <p class="pricing__route-distance">0.8 km</p>
+                        <div class="pricing__route-bottom">
+                            <span class="pricing__route-price">S/ 4.00</span>
+                            <span class="pricing__route-tag pricing__route-tag--min">Precio mínimo aplicado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn--yellow btn--full btn--lg">Empieza ahora, es gratis</a>
+            </div>
+        </section>
+        <!-- FIN TARIFAS - Eduardo -->
+
+        <!-- ============================================= -->
+        <!-- TESTIMONIOS - Responsable: Dalila             -->
+        <!-- ============================================= -->
+        <section class="testimonials" id="testimonios">
             <div class="container">
                 <span class="badge badge--yellow-outline">Comunidad real</span>
                 <h2 class="section__title">Lo que dicen nuestros usuarios</h2>
@@ -335,15 +373,12 @@
                 </div>
             </div>
         </section>
+        <!-- FIN TESTIMONIOS - Dalila -->
 
-      <!-- FIN TESTIMONIOS - Dalila -->
-
-      <!-- ============================================= -->
-      <!-- EQUIPO - Responsable: Andy                    -->
-      <!-- ============================================= -->
-
-      <!-- FIN EQUIPO - Andy -->
-      <section class="team" id="equipo">
+        <!-- ============================================= -->
+        <!-- EQUIPO - Responsable: Andy                    -->
+        <!-- ============================================= -->
+        <section class="team" id="equipo">
             <div class="container">
                 <span class="badge badge--light">El equipo</span>
                 <h2 class="section__title">Conoce a CTR Technologies</h2>
@@ -432,99 +467,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- ============================================= -->
-        <!-- CÓMO FUNCIONA - Responsable: Andy             -->
-        <!-- ============================================= -->
-       
-        <!-- FIN CÓMO FUNCIONA - Andy -->
-
-        <!-- ============================================= -->
-        <!-- BENEFICIOS - Responsable: Sebastian           -->
-        <!-- ============================================= -->
-        
-        <!-- FIN BENEFICIOS - Sebastian -->
-
-        <!-- ============================================= -->
-        <!-- TARIFAS - Responsable: Eduardo                -->
-        <!-- ============================================= -->
-        <section class="pricing" id="tarifas">
-            <div class="container">
-                <span class="badge badge--green">Precios claros</span>
-                <h2 class="section__title">¿Cuánto cuesta el viaje?</h2>
-                <p class="section__subtitle">El precio se calcula automáticamente según la distancia.<br>Sin sorpresas.</p>
-
-                <!-- Fórmula -->
-                <div class="pricing__formula">
-                    <p class="pricing__formula-label">Fórmula de cálculo</p>
-                    <p class="pricing__formula-expression">Tarifa base + (S/km x distancia)</p>
-                    <div class="pricing__formula-values">
-                        <div class="pricing__formula-item">
-                            <span class="pricing__formula-amount">S/ 2.00</span>
-                            <span class="pricing__formula-desc">Tarifa base</span>
-                        </div>
-                        <div class="pricing__formula-item">
-                            <span class="pricing__formula-amount">S/ 1.50</span>
-                            <span class="pricing__formula-desc">Precio por km</span>
-                        </div>
-                        <div class="pricing__formula-item">
-                            <span class="pricing__formula-amount">S/ 4.00</span>
-                            <span class="pricing__formula-desc">Mínimo</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ejemplos de rutas -->
-                <div class="pricing__routes">
-                    <div class="pricing__route-card">
-                        <h4 class="pricing__route-name">Jr. Castilla → Mercado</h4>
-                        <p class="pricing__route-distance">1.2 km</p>
-                        <div class="pricing__route-bottom">
-                            <span class="pricing__route-price">S/ 4.00</span>
-                            <span class="pricing__route-tag pricing__route-tag--min">Precio mínimo aplicado</span>
-                        </div>
-                    </div>
-                    <div class="pricing__route-card">
-                        <h4 class="pricing__route-name">Terminal → Plaza de Armas</h4>
-                        <p class="pricing__route-distance">3.5 km</p>
-                        <div class="pricing__route-bottom">
-                            <span class="pricing__route-price">S/ 7.25</span>
-                            <span class="pricing__route-tag pricing__route-tag--calc">Precio calculado</span>
-                        </div>
-                    </div>
-                    <div class="pricing__route-card">
-                        <h4 class="pricing__route-name">Colegio → Hospital</h4>
-                        <p class="pricing__route-distance">5.0 km</p>
-                        <div class="pricing__route-bottom">
-                            <span class="pricing__route-price">S/ 9.50</span>
-                            <span class="pricing__route-tag pricing__route-tag--calc">Precio calculado</span>
-                        </div>
-                    </div>
-                    <div class="pricing__route-card">
-                        <h4 class="pricing__route-name">Av. Grau → Jr. Unión</h4>
-                        <p class="pricing__route-distance">0.8 km</p>
-                        <div class="pricing__route-bottom">
-                            <span class="pricing__route-price">S/ 4.00</span>
-                            <span class="pricing__route-tag pricing__route-tag--min">Precio mínimo aplicado</span>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="btn btn--yellow btn--full btn--lg">Empieza ahora, es gratis</a>
-            </div>
-        </section>
-        <!-- FIN TARIFAS - Eduardo -->
-
-        <!-- ============================================= -->
-        <!-- TESTIMONIOS - Responsable: Dalila             -->
-        <!-- ============================================= -->
-        
-        <!-- FIN TESTIMONIOS - Dalila -->
-
-        <!-- ============================================= -->
-        <!-- EQUIPO - Responsable: Andy                    -->
-        <!-- ============================================= -->
-        
         <!-- FIN EQUIPO - Andy -->
 
         <!-- ============================================= -->
@@ -544,41 +486,14 @@
         </section>
         <!-- FIN CTA - Jesús -->
 
-      <!-- ============================================= -->
-      <!-- CTA - Responsable: Jesús                      -->
-      <!-- ============================================= -->
-      <section class="cta" id="registrarse">
-        <div class="container cta__container">
-          <img
-            src="assets/images/cta-icon.png"
-            alt="ChapaTuRuta App"
-            class="cta__icon"
-          />
-          <h2 class="cta__title">¿Listo para empezar?</h2>
-          <p class="cta__text">
-            Únete a los pasajeros y conductores que ya están usando ChapaTuRuta
-            en su ciudad. Registro gratuito, sin compromisos.
-          </p>
-          <div class="cta__buttons">
-            <a href="#" class="btn btn--white">🛺 Quiero viajar</a>
-            <a href="#" class="btn btn--outline-light">🚗 Quiero manejar</a>
-          </div>
-          <p class="cta__login">
-            ¿Ya tienes cuenta?
-            <a href="#" class="cta__login-link">Inicia sesión</a>
-          </p>
-        </div>
-      </section>
-      <!-- FIN CTA - Jesús -->
     </main>
 
     <!-- ============================================= -->
     <!-- FOOTER - Responsable: Eduardo                 -->
     <!-- ============================================= -->
-
     <footer class="footer" id="footer">
         <div class="container footer__container">
-            <a href="#" class="footer_logo">Chapa<span class="footer_logo--accent">Tu</span>Ruta</a>
+            <a href="#" class="footer__logo">Chapa<span class="footer__logo--accent">Tu</span>Ruta</a>
             <p class="footer__copy">© 2026 CTR Technologies</p>
             <nav class="footer__nav">
                 <a href="#" class="footer__link">Términos</a>
@@ -588,5 +503,60 @@
         </div>
     </footer>
     <!-- FIN FOOTER - Eduardo -->
-  </body>
+
+    <script>
+        // Toggle menú móvil
+        const menuToggle = document.getElementById('menuToggle');
+        const menuClose = document.getElementById('menuClose');
+        const mainNav = document.getElementById('mainNav');
+
+        function openMenu() {
+            mainNav.classList.add('header__nav--open');
+            menuToggle.classList.add('header__menu-toggle--active');
+        }
+        function closeMenu() {
+            mainNav.classList.remove('header__nav--open');
+            menuToggle.classList.remove('header__menu-toggle--active');
+        }
+
+        menuToggle.addEventListener('click', openMenu);
+        menuClose.addEventListener('click', closeMenu);
+
+        // Tabs "Cómo funciona"
+        const tabBtns = document.querySelectorAll('.how-tabs__btn');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('how-tabs__btn--active'));
+                btn.classList.add('how-tabs__btn--active');
+                const tab = btn.dataset.tab;
+                document.getElementById('tab-pasajero').classList.toggle('how-flow--hidden', tab !== 'pasajero');
+                document.getElementById('tab-conductor').classList.toggle('how-flow--hidden', tab !== 'conductor');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Cerrar menú móvil si está abierto
+                    closeMenu();
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>
