@@ -141,26 +141,6 @@ ul {
 /* HEADER - Responsable: Dalila                  */
 /* ============================================= */
 
-
-.header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 16px 0; transition: all 0.3s ease; background: transparent; }
-.header--scrolled { background: rgba(26,39,68,0.97); backdrop-filter: blur(10px); box-shadow: 0 2px 20px rgba(0,0,0,0.15); padding: 10px 0; }
-.header__container { display: flex; align-items: center; justify-content: space-between; }
-.header__logo { font-size: 1.5rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
-.header__logo--accent { color: #f5a623; }
-.header__nav { display: flex; align-items: center; gap: 12px; }
-.header__nav-list { display: flex; gap: 8px; }
-.header__nav-link { color: rgba(255,255,255,0.8); font-size: 0.9rem; font-weight: 500; padding: 8px 14px; border-radius: 6px; transition: all 0.3s; }
-.header__nav-link:hover { color: #fff; background: rgba(255,255,255,0.1); }
-.header__btn-register { padding: 10px 22px; background: transparent; color: #fff; border: 1.5px solid #f5a623; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s; }
-.header__btn-register:hover { background: #f5a623; color: #1a2744; }
-.header__menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
-.header__menu-toggle span { width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: all 0.3s; }
-.header__nav-header { display: none; }
-.header__nav-close { display: none; }
-.header__nav-cta { display: none; }
-.header__logo--mobile { display: none; }
-
-
 /* FIN HEADER - Dalila */
 
 /* ============================================= */
