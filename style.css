@@ -422,7 +422,14 @@ ul {
 /* ============================================= */
 /* FOOTER - Responsable: Eduardo                 */
 /* ============================================= */
-
+.footer { background: #141e30; padding: 24px 0; }
+.footer__container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.footer__logo { font-size: 1.2rem; font-weight: 800; color: #fff; }
+.footer__logo--accent { color: #f5a623; }
+.footer__copy { font-size: 0.82rem; color: rgba(255,255,255,0.45); }
+.footer__nav { display: flex; gap: 20px; }
+.footer__link { font-size: 0.85rem; color: rgba(255,255,255,0.55); transition: color 0.3s; }
+.footer__link:hover { color: #fff; }
 /* FIN FOOTER - Eduardo */
 
 /* ============================================= */
