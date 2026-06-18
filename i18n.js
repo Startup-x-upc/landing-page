@@ -114,6 +114,12 @@ const translations = {
     footer_privacy: "Privacidad",
     footer_contact: "Contacto",
 
+    // Video del producto
+    video_badge: "Video del producto",
+    video_title: "Conoce ChapaTuRuta",
+    video_subtitle: "Ve cómo conectamos pasajeros y conductores en tu ciudad",
+    video_duration: "Reproducir video · 2:30 min",
+
     // CTA
     cta_title: "¿Listo para empezar?",
     cta_text: "Únete a los pasajeros y conductores que ya están usando ChapaTuRuta en su ciudad. Registro gratuito, sin compromisos.",
@@ -233,6 +239,12 @@ const translations = {
     footer_terms: "Terms",
     footer_privacy: "Privacy",
     footer_contact: "Contact",
+
+    // Video product
+    video_badge: "Product video",
+    video_title: "Meet ChapaTuRuta",
+    video_subtitle: "See how we connect passengers and drivers in your city",
+    video_duration: "Play video · 2:30 min",
 
     // CTA
     cta_title: "Ready to get started?",
@@ -389,6 +401,12 @@ function applyTranslations(lang) {
   set('[data-i18n="cta_btn_drive"]', 'cta_btn_drive');
   set('[data-i18n="cta_login"]', 'cta_login');
   set('[data-i18n="cta_login_link"]', 'cta_login_link');
+
+  // ---------- VIDEO PRODUCTO ----------
+  set('[data-i18n="video_badge"]', 'video_badge');
+  set('[data-i18n="video_title"]', 'video_title');
+  set('[data-i18n="video_subtitle"]', 'video_subtitle');
+  set('[data-i18n="video_duration"]', 'video_duration');
 }
 
 function switchLang(lang) {

@@ -922,3 +922,89 @@ ul {
   .pricing__formula-values { flex-direction: column; gap: 16px; }
   .footer__container { flex-direction: column; text-align: center; }
 }
+
+/* ============================================= */
+/* ABOUT PRODUCT (VIDEO) - Responsable: Andy     */
+/* ============================================= */
+.video-product {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a2744 0%, #1e3054 50%, #1a2744 100%);
+  text-align: center;
+}
+.video-product__title { color: #fff !important; }
+.video-product .section__subtitle { color: rgba(255,255,255,0.7); margin-bottom: 48px; }
+.video-product__header { margin-bottom: 40px; }
+.video-product__wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+  background: #0e1b35;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.45);
+}
+.video-product__player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0b1526;
+  overflow: hidden;
+}
+.video-product__video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-product__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: rgba(10, 22, 48, 0.55);
+  transition: opacity 0.3s ease;
+}
+.video-product__play-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #f5a623;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.2s ease, background 0.2s ease;
+  box-shadow: 0 4px 20px rgba(245,166,35,0.45);
+}
+.video-product__play-btn:hover { transform: scale(1.1); background: #e09510; }
+.video-product__duration { color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0; }
+.video-product__controls { padding: 14px 18px; background: #0e1b35; }
+.video-product__progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 2px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.video-product__progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #f5a623;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+.video-product__ctrl-row { display: flex; align-items: center; gap: 12px; }
+.video-product__ctrl-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.75);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.video-product__ctrl-btn:hover { color: #f5a623; }
+.video-product__ctrl-btn--right { margin-left: auto; }
+.video-product__time { color: rgba(255,255,255,0.55); font-size: 0.82rem; font-family: monospace; min-width: 36px; }
+/* FIN ABOUT PRODUCT - Andy */
