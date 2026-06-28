@@ -97,7 +97,7 @@ const translations = {
     about_team_title: "Las personas detrás de ChapaTuRuta",
     about_team_subtitle: "Somos 5 estudiantes de Ingeniería de Software de la UPC comprometidos con transformar la movilidad urbana.",
     about_team_role: "Ing. de Software",
-    about_team_video_label: "Conoce al equipo · 2:00 min",
+    about_team_video_label: "Conoce al equipo · 6:25 min",
 
     // Pricing
     pricing_badge: "Precios claros",
@@ -229,7 +229,7 @@ const translations = {
     about_team_title: "The people behind ChapaTuRuta",
     about_team_subtitle: "We are 5 Software Engineering students from UPC committed to transforming urban mobility.",
     about_team_role: "Software Eng. Student",
-    about_team_video_label: "Meet the team · 2:00 min",
+    about_team_video_label: "Meet the team · 6:25 min",
 
     // Pricing
     pricing_badge: "Clear pricing",
