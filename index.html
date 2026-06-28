@@ -493,6 +493,145 @@
       <!-- FIN EQUIPO - Andy -->
 
       <!-- ============================================= -->
+      <!-- ABOUT THE TEAM - Responsable: Andy            -->
+      <!-- ============================================= -->
+      <section class="about-team" id="about-equipo">
+        <div class="container">
+
+          <!-- Encabezado -->
+          <div class="about-team__header">
+            <span class="badge badge--yellow" data-i18n="about_team_badge">Nuestro equipo</span>
+            <h2 class="section__title" data-i18n="about_team_title">Las personas detrás de ChapaTuRuta</h2>
+            <p class="section__subtitle" data-i18n="about_team_subtitle">Somos 5 estudiantes de Ingeniería de Software de la UPC comprometidos con transformar la movilidad urbana.</p>
+          </div>
+
+          <!-- Grid de miembros -->
+          <div class="about-team__grid">
+
+            <div class="about-team__card">
+              <div class="about-team__photo-wrap">
+                <img src="assets/images/team-andy.png" alt="Andy Pillaca" class="about-team__photo">
+              </div>
+              <h3 class="about-team__name">Andy Pillaca</h3>
+              <p class="about-team__role" data-i18n="about_team_role">Ing. de Software</p>
+            </div>
+
+            <div class="about-team__card">
+              <div class="about-team__photo-wrap">
+                <img src="assets/images/team-dalila.png" alt="Dalila Torres" class="about-team__photo">
+              </div>
+              <h3 class="about-team__name">Dalila Torres</h3>
+              <p class="about-team__role" data-i18n="about_team_role">Ing. de Software</p>
+            </div>
+
+            <div class="about-team__card">
+              <div class="about-team__photo-wrap">
+                <img src="assets/images/team-jesus.jpg" alt="Jesús Castillo" class="about-team__photo">
+              </div>
+              <h3 class="about-team__name">Jesús Castillo</h3>
+              <p class="about-team__role" data-i18n="about_team_role">Ing. de Software</p>
+            </div>
+
+            <div class="about-team__card">
+              <div class="about-team__photo-wrap">
+                <img src="assets/images/team-eduardo.jpeg" alt="Eduardo Aguirre" class="about-team__photo">
+              </div>
+              <h3 class="about-team__name">Eduardo Aguirre</h3>
+              <p class="about-team__role" data-i18n="about_team_role">Ing. de Software</p>
+            </div>
+
+            <div class="about-team__card">
+              <div class="about-team__photo-wrap">
+                <img src="assets/images/team-sebastian.png" alt="Sebastian Aiquipa" class="about-team__photo">
+              </div>
+              <h3 class="about-team__name">Sebastian Aiquipa</h3>
+              <p class="about-team__role" data-i18n="about_team_role">Ing. de Software</p>
+            </div>
+
+          </div>
+
+          <!-- ============================================= -->
+          <!-- VIDEO DEL EQUIPO                              -->
+          <!-- COLOCA AQUÍ TU VIDEO:                        -->
+          <!--   Opción A (archivo local):                  -->
+          <!--     <source src="assets/video/team.mp4" ...> -->
+          <!--   Opción B (YouTube embed):                  -->
+          <!--     Reemplaza el <video> por un <iframe>     -->
+          <!--     con src="https://www.youtube.com/embed/  -->
+          <!--     TU_ID_DE_VIDEO"                          -->
+          <!-- ============================================= -->
+          <div class="about-team__video-wrap">
+            <div class="about-team__video-inner">
+              <video
+                class="about-team__video"
+                controls
+                preload="metadata"
+              >
+                <!-- ▼ REEMPLAZA EL src CON LA RUTA O URL DE TU VIDEO ▼ -->
+                <source src="" type="video/mp4" />
+                <!-- ▲ ————————————————————————————————————————————————— ▲ -->
+                Tu navegador no soporta la reproducción de video.
+              </video>
+              <div class="about-team__video-overlay" id="atOverlay">
+                <button class="about-team__play-btn" id="atPlayBtn" aria-label="Reproducir video del equipo">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+                <p class="about-team__video-label" data-i18n="about_team_video_label">Conoce al equipo · 2:00 min</p>
+              </div>
+            </div>
+            <!-- Controles -->
+            <div class="about-team__controls">
+              <div class="about-team__progress-bar">
+                <div class="about-team__progress-fill" id="atFill"></div>
+              </div>
+              <div class="about-team__ctrl-row">
+                <button class="about-team__ctrl-btn" id="atCtrlPlay" aria-label="Play/Pause">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+                <span class="about-team__time" id="atTime">0:00</span>
+                <button class="about-team__ctrl-btn" id="atCtrlMute" aria-label="Silenciar">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                </button>
+                <button class="about-team__ctrl-btn about-team__ctrl-btn--right" id="atCtrlFs" aria-label="Pantalla completa">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- FIN VIDEO DEL EQUIPO -->
+
+        </div>
+      </section>
+
+      <script>
+        (function () {
+          const vid = document.querySelector('.about-team__video');
+          const overlay = document.getElementById('atOverlay');
+          const playBtn = document.getElementById('atPlayBtn');
+          const ctrlPlay = document.getElementById('atCtrlPlay');
+          const ctrlMute = document.getElementById('atCtrlMute');
+          const ctrlFs = document.getElementById('atCtrlFs');
+          const fill = document.getElementById('atFill');
+          const timeEl = document.getElementById('atTime');
+          if (!vid) return;
+          function fmt(s) { return Math.floor(s/60)+':'+(Math.floor(s%60)<10?'0':'')+Math.floor(s%60); }
+          function toggle() {
+            if (vid.paused) { vid.play(); overlay.style.opacity='0'; overlay.style.pointerEvents='none'; }
+            else { vid.pause(); overlay.style.opacity='1'; overlay.style.pointerEvents='auto'; }
+          }
+          playBtn.addEventListener('click', toggle);
+          ctrlPlay.addEventListener('click', toggle);
+          ctrlMute.addEventListener('click', () => { vid.muted = !vid.muted; });
+          ctrlFs.addEventListener('click', () => { if (vid.requestFullscreen) vid.requestFullscreen(); });
+          vid.addEventListener('timeupdate', () => {
+            if (vid.duration) { fill.style.width=(vid.currentTime/vid.duration*100)+'%'; timeEl.textContent=fmt(vid.currentTime); }
+          });
+          vid.addEventListener('ended', () => { overlay.style.opacity='1'; overlay.style.pointerEvents='auto'; });
+        })();
+      </script>
+      <!-- FIN ABOUT THE TEAM - Andy -->
+
+      <!-- ============================================= -->
       <!-- ABOUT PRODUCT (VIDEO) - Responsable: Andy     -->
       <!-- ============================================= -->
       <section class="video-product" id="video-producto">
