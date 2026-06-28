@@ -92,6 +92,12 @@ const translations = {
     team_eduardo_bio: "Soy estudiante de la carrera de ingeniería de software de 5to ciclo en la Universidad Peruana de Ciencias Aplicadas, tengo conocimientos en como C++, Python, CSS, JavaScript. Manejo he implemento directamente con Git y utilizo metodologías Ágiles como Scrum. En si me interesa mucho trabajar en equipo en diferentes proyectos debido a las diferentes experiencias que trae ello tanto así como el resolver problemas conjuntos y diseñar soluciones innovadoras.",
     team_sebastian_bio: "Soy estudiante de Ingeniería de Software y desarrollador full-stack. Tengo experiencia construyendo plataformas web completas — desde la arquitectura hasta el despliegue — utilizando tecnologías como React, Node.js, Express y PostgreSQL. Me apasiona entender el código en profundidad, no solo hacerlo funcionar, y busco siempre crear soluciones escalables que resuelvan problemas reales de negocio. He programado en C#, C++, PHP, Java y Python, además manejo de bases de datos relacionales.",
 
+    // About the Team
+    about_team_badge: "Sobre el equipo",
+    about_team_title: "Las personas detrás de ChapaTuRuta",
+    about_team_subtitle: "Somos 5 estudiantes de Ingeniería de Software de la UPC comprometidos con transformar la movilidad urbana.",
+    about_team_role: "Ing. de Software",
+    about_team_video_label: "Conoce al equipo · 2:00 min",
 
     // Pricing
     pricing_badge: "Precios claros",
@@ -115,7 +121,7 @@ const translations = {
     footer_contact: "Contacto",
 
     // Video del producto
-    video_badge: "Video del producto",
+    video_badge: "Sobre el producto",
     video_title: "Conoce ChapaTuRuta",
     video_subtitle: "Ve cómo conectamos pasajeros y conductores en tu ciudad",
     video_duration: "Reproducir video · 2:30 min",
@@ -218,6 +224,12 @@ const translations = {
     team_eduardo_bio: "I am a 5th-cycle Software Engineering student at Universidad Peruana de Ciencias Aplicadas. I have knowledge in C++, Python, CSS and JavaScript. I work directly with Git and use agile methodologies like Scrum. I am very interested in teamwork on different projects because of the diverse experiences it brings, as well as solving problems together and designing innovative solutions.",
     team_sebastian_bio: "I am a Software Engineering student and full-stack developer. I have experience building complete web platforms — from architecture to deployment — using technologies such as React, Node.js, Express and PostgreSQL. I am passionate about understanding code in depth, not just making it work, and I always seek to create scalable solutions that solve real business problems. I have programmed in C#, C++, PHP, Java and Python, and I manage relational databases.",
 
+    // About the Team
+    about_team_badge: "About the Team",
+    about_team_title: "The people behind ChapaTuRuta",
+    about_team_subtitle: "We are 5 Software Engineering students from UPC committed to transforming urban mobility.",
+    about_team_role: "Software Eng. Student",
+    about_team_video_label: "Meet the team · 2:00 min",
 
     // Pricing
     pricing_badge: "Clear pricing",
@@ -241,7 +253,7 @@ const translations = {
     footer_contact: "Contact",
 
     // Video product
-    video_badge: "Product video",
+    video_badge: "About the Product",
     video_title: "Meet ChapaTuRuta",
     video_subtitle: "See how we connect passengers and drivers in your city",
     video_duration: "Play video · 2:30 min",
@@ -371,6 +383,13 @@ function applyTranslations(lang) {
   set('[data-i18n="team_jesus_bio"]', 'team_jesus_bio');
   set('[data-i18n="team_eduardo_bio"]', 'team_eduardo_bio');
   set('[data-i18n="team_sebastian_bio"]', 'team_sebastian_bio');
+
+  // ---------- ABOUT THE TEAM ----------
+  set('[data-i18n="about_team_badge"]', 'about_team_badge');
+  set('[data-i18n="about_team_title"]', 'about_team_title');
+  set('[data-i18n="about_team_subtitle"]', 'about_team_subtitle');
+  document.querySelectorAll('[data-i18n="about_team_role"]').forEach(el => { el.textContent = t['about_team_role']; });
+  set('[data-i18n="about_team_video_label"]', 'about_team_video_label');
 
 
   // ---------- PRICING ----------
