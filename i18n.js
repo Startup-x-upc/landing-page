@@ -124,7 +124,7 @@ const translations = {
     video_badge: "Sobre el producto",
     video_title: "Conoce ChapaTuRuta",
     video_subtitle: "Ve cómo conectamos pasajeros y conductores en tu ciudad",
-    video_duration: "Reproducir video · 2:30 min",
+    video_duration: "Reproducir video · 2:17 min",
 
     // CTA
     cta_title: "¿Listo para empezar?",
@@ -256,7 +256,7 @@ const translations = {
     video_badge: "About the Product",
     video_title: "Meet ChapaTuRuta",
     video_subtitle: "See how we connect passengers and drivers in your city",
-    video_duration: "Play video · 2:30 min",
+    video_duration: "Play video · 2:17 min",
 
     // CTA
     cta_title: "Ready to get started?",
